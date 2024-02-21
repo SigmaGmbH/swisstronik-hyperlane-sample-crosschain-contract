@@ -24,20 +24,23 @@ cp .env.sample .env
 ```
 Then, in `.env` file, fill `DEPLOYER_KEY` env var with private key, which will be used to deploy contracts in both networks. Account, associated with this private key, should be funded in both networks.
 
+Optional - 
+
 When `.env` file is fulfilled, you can deploy contracts using the following command:
 ```sh
 npm run deploy
 ```
-Command above will output you contract addresses in both networks. They will be used in next steps.
+Command above will output you contract addresses in both networks. If you want, you can use those custom deployed contracts with your .env file.
 
 ## Interact
 
-We've prepared multiple scripts for interaction with deployed contracts. Before you can use those scripts, update contract addresses in scripts to addresses of deployed contracts.
+We've prepared multiple scripts for interaction with deployed contracts.
+
+You can use these scripts with already deployed contracts.
+However,if you wish you can deploy your own and update contract addresses in .env file to addresses of deployed contracts.
 
 - `MUMBAI_CONTRACT_ADDRESS` should be filled with address of `SampleCrossChainCounter` deployed in Polygon Mumbai
 - `SWISSTRONIK_CONTRACT_ADDRESS` should be filled with address of `SampleCrossChainCounter` deployed in Swisstronik
-
-Once you set contract addresses, you're ready to interact with your deployed contracts.
 
 ### Increment counter in Polygon Mumbai
 
