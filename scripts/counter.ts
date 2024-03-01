@@ -3,7 +3,7 @@ import {ethers} from "hardhat";
 
 async function main() {
   // Construct instance of SampleCrossChainCounter in Mumbai
-  const provider = new ethers.JsonRpcProvider(process.env.MUMBAI_RPC);
+  const provider = new ethers.providers.JsonRpcProvider(process.env.MUMBAI_RPC);
   const wallet = new ethers.Wallet(process.env.DEPLOYER_KEY!);
   const signer = wallet.connect(provider);
 

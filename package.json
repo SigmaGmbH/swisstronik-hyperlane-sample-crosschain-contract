@@ -1,13 +1,13 @@
 {
   "name": "sample-cross-chain-contract",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "hardhat": "^2.20.1"
   },
   "dependencies": {
     "@hyperlane-xyz/core": "^3.7.0",
     "@openzeppelin/contracts": "^5.0.1",
-    "@swisstronik/swisstronik.js": "^1.0.0",
+    "@swisstronik/ethers": "^572.0.2",
     "dotenv": "^16.4.4"
   },
   "scripts": {
